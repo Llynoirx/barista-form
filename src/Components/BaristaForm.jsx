@@ -80,7 +80,8 @@ const BaristaForm = () => {
                         🔄
                     </button>
         </div>
-        <form>
+        <form className="container">
+        <div className="mini-container">
             <h3>Temperature</h3>
             <div className="answer-space" id={correctTemp}>
                 {inputs["temperature"]} 
@@ -94,7 +95,8 @@ const BaristaForm = () => {
                 choices={ingredients["temperature"]}
                 checked={inputs["temperature"]}
             />
-
+        </div>
+            <div className="mini-container">
             <h3>Syrup</h3>
             <div className="answer-space" id={correctSyrup}>
                 {inputs["syrup"]} 
@@ -108,7 +110,8 @@ const BaristaForm = () => {
                 choices={ingredients["syrup"]}
                 checked={inputs["syrup"]}
             />
-
+            </div>
+            <div className="mini-container">
             <h3>Milk</h3>
             <div className="answer-space" id={correctMilk}>
                 {inputs["milk"]} 
@@ -122,7 +125,8 @@ const BaristaForm = () => {
                 choices={ingredients["milk"]}
                 checked={inputs["milk"]}
             />
-
+            </div>
+            <div className="mini-container">
             <h3>Blended</h3>
             <div className="answer-space" id={correctBlend}>
                 {inputs["blended"]} 
@@ -136,6 +140,7 @@ const BaristaForm = () => {
                 choices={ingredients["blended"]}
                 checked={inputs["blended"]}
             />
+            </div>
         </form>
         <button className="button submit" 
                 type="submit" 
